@@ -1,5 +1,8 @@
 # Laravel-Modules
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/packagist/dt/larabile/laravel-modules.svg?style=flat-square)](https://packagist.org/packages/larabile/laravel-modules)
+
 | **Laravel**  |  **laravel-modules** |
 |---|---|
 | 5.8  | ^1.0  |
