@@ -24,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/Larabile/laravel-modules/src/Commands/stubs',
+        'path' => base_path() . '/vendor/larabile/laravel-modules/src/Commands/stubs',
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
@@ -149,10 +149,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'Larabile',
+        'vendor' => 'larabile',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Edrick Agoncillo',
+            'email' => 'agoncilloedrick@gmail.com',
         ],
     ],
     /*
