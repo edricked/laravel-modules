@@ -4,7 +4,6 @@
   "keywords": [
     "modules",
     "laravel",
-    "nwidart",
     "larabile",
     "module",
     "rad"
@@ -31,7 +30,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Nwidart\\Modules\\": "src"
+      "Larabile\\Modules\\": "src"
     },
     "files": [
       "src/helpers.php"
@@ -39,17 +38,17 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Nwidart\\Modules\\Tests\\": "tests",
+      "Larabile\\Modules\\Tests\\": "tests",
       "Modules\\Recipe\\": "tests/stubs/valid/Recipe"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Nwidart\\Modules\\LaravelModulesServiceProvider"
+        "Larabile\\Modules\\LaravelModulesServiceProvider"
       ],
       "aliases": {
-        "Module": "Nwidart\\Modules\\Facades\\Module"
+        "Module": "Larabile\\Modules\\Facades\\Module"
       }
     },
     "branch-alias": {

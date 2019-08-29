@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Larabile\Modules;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Arr;

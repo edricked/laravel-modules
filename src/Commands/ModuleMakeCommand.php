@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Larabile\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Generators\ModuleGenerator;
+use Larabile\Modules\Generators\ModuleGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

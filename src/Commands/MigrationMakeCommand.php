@@ -1,13 +1,13 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Larabile\Modules\Commands;
 
 use Illuminate\Support\Str;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Support\Migrations\NameParser;
-use Nwidart\Modules\Support\Migrations\SchemaParser;
-use Nwidart\Modules\Support\Stub;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Larabile\Modules\Support\Config\GenerateConfigReader;
+use Larabile\Modules\Support\Migrations\NameParser;
+use Larabile\Modules\Support\Migrations\SchemaParser;
+use Larabile\Modules\Support\Stub;
+use Larabile\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

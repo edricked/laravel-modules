@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Publishing;
+namespace Larabile\Modules\Publishing;
 
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Larabile\Modules\Support\Config\GenerateConfigReader;
 
 class AssetPublisher extends Publisher
 {

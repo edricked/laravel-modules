@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Larabile\Modules;
 
-use Nwidart\Modules\Support\Stub;
+use Larabile\Modules\Support\Stub;
 
 class LumenModulesServiceProvider extends ModulesServiceProvider
 {

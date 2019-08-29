@@ -1,14 +1,14 @@
 <?php
 
-namespace Nwidart\Modules\Generators;
+namespace Larabile\Modules\Generators;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Console\Command as Console;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use Nwidart\Modules\FileRepository;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Support\Stub;
+use Larabile\Modules\FileRepository;
+use Larabile\Modules\Support\Config\GenerateConfigReader;
+use Larabile\Modules\Support\Stub;
 
 class ModuleGenerator extends Generator
 {
@@ -43,7 +43,7 @@ class ModuleGenerator extends Generator
     /**
      * The pingpong module instance.
      *
-     * @var \Nwidart\Modules\Module
+     * @var \Larabile\Modules\Module
      */
     protected $module;
 
@@ -182,7 +182,7 @@ class ModuleGenerator extends Generator
     /**
      * Get the module instance.
      *
-     * @return \Nwidart\Modules\Module
+     * @return \Larabile\Modules\Module
      */
     public function getModule()
     {

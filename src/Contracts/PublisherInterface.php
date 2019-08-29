@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Contracts;
+namespace Larabile\Modules\Contracts;
 
 interface PublisherInterface
 {

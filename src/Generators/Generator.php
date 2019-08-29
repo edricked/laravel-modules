@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Generators;
+namespace Larabile\Modules\Generators;
 
 abstract class Generator
 {

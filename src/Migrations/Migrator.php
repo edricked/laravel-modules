@@ -1,19 +1,19 @@
 <?php
 
-namespace Nwidart\Modules\Migrations;
+namespace Larabile\Modules\Migrations;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Nwidart\Modules\Module;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Larabile\Modules\Module;
+use Larabile\Modules\Support\Config\GenerateConfigReader;
 
 class Migrator
 {
     /**
      * Pingpong Module instance.
      *
-     * @var \Nwidart\Modules\Module
+     * @var \Larabile\Modules\Module
      */
     protected $module;
 
@@ -34,7 +34,7 @@ class Migrator
     /**
      * Create new instance.
      *
-     * @param \Nwidart\Modules\Module $module
+     * @param \Larabile\Modules\Module $module
      */
     public function __construct(Module $module)
     {

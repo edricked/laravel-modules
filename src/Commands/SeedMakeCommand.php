@@ -1,12 +1,12 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Larabile\Modules\Commands;
 
 use Illuminate\Support\Str;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Support\Stub;
-use Nwidart\Modules\Traits\CanClearModulesCache;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Larabile\Modules\Support\Config\GenerateConfigReader;
+use Larabile\Modules\Support\Stub;
+use Larabile\Modules\Traits\CanClearModulesCache;
+use Larabile\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

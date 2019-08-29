@@ -76,7 +76,7 @@ All Notable changes to `laravel-modules` will be documented in this file.
 
 ### Added
 
-- Laravel mix configuration (https://nwidart.com/laravel-modules/v3/basic-usage/compiling-assets)
+- Laravel mix configuration (https://Larabile.com/laravel-modules/v3/basic-usage/compiling-assets)
 
 ### Changed
 
@@ -460,7 +460,7 @@ All Notable changes to `laravel-modules` will be documented in this file.
 
 ### Fixed
 
-- Module generation namespace now works with `StudlyCase` ([Issue #14](https://github.com/nWidart/laravel-modules/issues/14))
+- Module generation namespace now works with `StudlyCase` ([Issue #14](https://github.com/Larabile/laravel-modules/issues/14))
 - No module namespace fix (#13)
 
 ### Changed
