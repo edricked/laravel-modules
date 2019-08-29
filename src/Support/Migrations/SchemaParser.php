@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Support\Migrations;
+namespace Nwidart\Modules\Support\Migrations;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;

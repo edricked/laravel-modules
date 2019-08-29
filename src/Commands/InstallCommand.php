@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Json;
-use Larabile\Modules\Process\Installer;
+use Nwidart\Modules\Json;
+use Nwidart\Modules\Process\Installer;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

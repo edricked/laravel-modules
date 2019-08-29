@@ -1,8 +1,8 @@
 <?php
 
-namespace Larabile\Modules\Process;
+namespace Nwidart\Modules\Process;
 
-use Larabile\Modules\Module;
+use Nwidart\Modules\Module;
 
 class Updater extends Runner
 {

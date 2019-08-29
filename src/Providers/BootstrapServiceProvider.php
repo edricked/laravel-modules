@@ -1,9 +1,8 @@
 <?php
 
-namespace Larabile\Modules\Providers;
+namespace Nwidart\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Larabile\Modules\Contracts\RepositoryInterface;
 
 class BootstrapServiceProvider extends ServiceProvider
 {
@@ -12,7 +11,7 @@ class BootstrapServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app[RepositoryInterface::class]->boot();
+        $this->app['modules']->boot();
     }
 
     /**
@@ -20,6 +19,6 @@ class BootstrapServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app[RepositoryInterface::class]->register();
+        $this->app['modules']->register();
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Facades;
+namespace Nwidart\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

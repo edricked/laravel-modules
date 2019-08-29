@@ -1,9 +1,8 @@
 <?php
 
-namespace Larabile\Modules;
+namespace Nwidart\Modules;
 
-use Larabile\Modules\Contracts\RepositoryInterface;
-use Larabile\Modules\Support\Stub;
+use Nwidart\Modules\Support\Stub;
 
 class LaravelModulesServiceProvider extends ModulesServiceProvider
 {
@@ -34,10 +33,8 @@ class LaravelModulesServiceProvider extends ModulesServiceProvider
         Stub::setBasePath(__DIR__ . '/Commands/stubs');
 
         $this->app->booted(function ($app) {
-            /** @var RepositoryInterface $moduleRepository */
-            $moduleRepository = $app[RepositoryInterface::class];
-            if ($moduleRepository->config('stubs.enabled') === true) {
-                Stub::setBasePath($moduleRepository->config('stubs.path'));
+            if ($app['modules']->config('stubs.enabled') === true) {
+                Stub::setBasePath($app['modules']->config('stubs.path'));
             }
         });
     }
@@ -51,12 +48,6 @@ class LaravelModulesServiceProvider extends ModulesServiceProvider
             $path = $app['config']->get('modules.paths.modules');
 
             return new Laravel\LaravelFileRepository($app, $path);
-        });
-        $this->app->singleton(Contracts\ActivatorInterface::class, function ($app) {
-            $activator = $app['config']->get('modules.activator');
-            $class = $app['config']->get('modules.activators.' . $activator)['class'];
-
-            return new $class($app);
         });
         $this->app->alias(Contracts\RepositoryInterface::class, 'modules');
     }

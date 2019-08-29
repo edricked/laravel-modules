@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb27df82-f766-4dbb-9f04-270e1aaf83ca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Activators/FileActivator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CommandMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ControllerMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ControllerMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/DisableCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/DisableCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/DumpCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/DumpCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/EnableCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/EnableCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/EventMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/EventMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/FactoryMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/FactoryMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/GeneratorCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/GeneratorCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/InstallCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/InstallCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/JobMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/JobMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/LaravelModulesV6Migrator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ListCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ListCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ListenerMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ListenerMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MailMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MailMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MiddlewareMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MiddlewareMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MigrateCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MigrateCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MigrateRefreshCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MigrateRefreshCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MigrateResetCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MigrateResetCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MigrateRollbackCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MigrateRollbackCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MigrateStatusCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MigrateStatusCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MigrationMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MigrationMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ModelMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ModelMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ModuleMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ModuleMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/NotificationMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/NotificationMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/PolicyMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PolicyMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ProviderMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ProviderMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/PublishCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PublishCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/PublishConfigurationCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PublishConfigurationCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/PublishMigrationCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PublishMigrationCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/PublishTranslationCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PublishTranslationCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RequestMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RequestMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ResourceMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ResourceMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RouteProviderMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RouteProviderMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RuleMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RuleMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/SeedCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/SeedCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/SeedMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/SeedMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/SetupCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/SetupCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/TestMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/TestMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/UnUseCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/UnUseCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/UpdateCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/UpdateCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/UseCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/UseCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/stubs/json.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/stubs/json.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/stubs/scaffold/provider.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/stubs/scaffold/provider.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/stubs/views/index.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/stubs/views/index.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/ActivatorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/PublisherInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/PublisherInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/RepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/RepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/RunableInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/RunableInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/FileAlreadyExistException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/FileAlreadyExistException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/InvalidAssetPath.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/InvalidAssetPath.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/InvalidJsonException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/InvalidJsonException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ModuleNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/ModuleNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facades/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facades/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Generators/FileGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Generators/FileGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Generators/Generator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Generators/Generator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Generators/ModuleGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Generators/ModuleGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Laravel/LaravelFileRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laravel/LaravelFileRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Laravel/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laravel/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaravelModulesServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaravelModulesServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lumen/LumenFileRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lumen/LumenFileRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lumen/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lumen/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LumenModulesServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LumenModulesServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Migrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Migrator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModulesServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModulesServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Process/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Process/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Process/Runner.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Process/Runner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Process/Updater.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Process/Updater.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/BootstrapServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/BootstrapServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/ConsoleServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/ConsoleServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/ContractsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/ContractsServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Publishing/AssetPublisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Publishing/AssetPublisher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Publishing/LangPublisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Publishing/LangPublisher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Publishing/MigrationPublisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Publishing/MigrationPublisher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Publishing/Publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Publishing/Publisher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routing/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Config/GenerateConfigReader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/Config/GenerateConfigReader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Config/GeneratorPath.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/Config/GeneratorPath.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Migrations/NameParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/Migrations/NameParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Migrations/SchemaParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/Migrations/SchemaParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Stub.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/Stub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/CanClearModulesCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/CanClearModulesCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/MigrationLoaderTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/MigrationLoaderTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/ModuleCommandTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/ModuleCommandTrait.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-276" />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="161">
+                <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nWidart</find>
+      <find>$AUTHOR_NAME$</find>
+      <find>nwa</find>
+      <find>enable</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>larabile</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/src/FileRepository.php" />
+        <option value="$PROJECT_DIR$/LICENSE.md" />
+        <option value="$PROJECT_DIR$/composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="543" />
+    <option name="y" value="122" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="laravel-modules" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb27df82-f766-4dbb-9f04-270e1aaf83ca" name="Default" comment="" />
+      <created>1566276969120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566276969120</updated>
+      <workItem from="1566276970306" duration="6302000" />
+      <workItem from="1567061477117" duration="2461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8763000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49924126" visible="true" weight="0.24962178" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32776934" />
+      <window_info id="Structure" order="0" sideWeight="0.5007587" side_tool="true" weight="0.24962178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32776934" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FileRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Collection.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Support/Config/GenerateConfigReader.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Support/Config/GeneratorPath.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Support/Migrations/NameParser.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Support/Migrations/SchemaParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#55#98#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Support/Stub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3478" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Laravel/LaravelFileRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/AliasLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/ControllerMakeCommand.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/migration/add.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/migration/create.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/migration/delete.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/command.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/composer.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/controller.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/controller-api.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/event.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/controller-plain.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/job.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/job-queued.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/json.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/listener.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/listener-duck.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/listener-queued.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/listener-queued-duck.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/mail.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/middleware.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/model.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/notification.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/package.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/policy.plain.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/provider.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/request.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/resource.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/resource-collection.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/route-provider.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/rule.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/seeder.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/unit-test.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/webpack.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/CommandMakeCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/ModuleMakeCommand.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Laravel/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModulesServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1302" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="378" column="26" selection-start-line="378" selection-start-column="20" selection-end-line="378" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Secret/Test/vendor/nwidart/laravel-modules/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-276" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="161">
+            <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="161">
+            <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

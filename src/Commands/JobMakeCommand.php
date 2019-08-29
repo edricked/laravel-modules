@@ -1,11 +1,11 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Support\Str;
-use Larabile\Modules\Support\Config\GenerateConfigReader;
-use Larabile\Modules\Support\Stub;
-use Larabile\Modules\Traits\ModuleCommandTrait;
+use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Nwidart\Modules\Support\Stub;
+use Nwidart\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -31,9 +31,7 @@ class JobMakeCommand extends GeneratorCommand
 
     public function getDefaultNamespace() : string
     {
-        $module = $this->laravel['modules'];
-
-        return $module->config('paths.generator.jobs.namespace') ?: $module->config('paths.generator.jobs.path', 'Jobs');
+        return $this->laravel['modules']->config('paths.generator.jobs.path', 'Jobs');
     }
 
     /**

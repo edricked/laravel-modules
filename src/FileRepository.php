@@ -1,20 +1,16 @@
 <?php
 
-namespace Larabile\Modules;
+namespace Nwidart\Modules;
 
 use Countable;
-use Illuminate\Cache\CacheManager;
 use Illuminate\Container\Container;
-use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Illuminate\Contracts\Routing\UrlGenerator;
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
-use Larabile\Modules\Contracts\RepositoryInterface;
-use Larabile\Modules\Exceptions\InvalidAssetPath;
-use Larabile\Modules\Exceptions\ModuleNotFoundException;
-use Larabile\Modules\Process\Installer;
-use Larabile\Modules\Process\Updater;
+use Nwidart\Modules\Contracts\RepositoryInterface;
+use Nwidart\Modules\Exceptions\InvalidAssetPath;
+use Nwidart\Modules\Exceptions\ModuleNotFoundException;
+use Nwidart\Modules\Process\Installer;
+use Nwidart\Modules\Process\Updater;
 
 abstract class FileRepository implements RepositoryInterface, Countable
 {
@@ -45,25 +41,10 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * @var string
      */
     protected $stubPath;
-    /**
-     * @var UrlGenerator
-     */
-    private $url;
-    /**
-     * @var ConfigRepository
-     */
-    private $config;
-    /**
-     * @var Filesystem
-     */
-    private $files;
-    /**
-     * @var CacheManager
-     */
-    private $cache;
 
     /**
      * The constructor.
+     *
      * @param Container $app
      * @param string|null $path
      */
@@ -71,10 +52,6 @@ abstract class FileRepository implements RepositoryInterface, Countable
     {
         $this->app = $app;
         $this->path = $path;
-        $this->url = $app['url'];
-        $this->config = $app['config'];
-        $this->files = $app['files'];
-        $this->cache = $app['cache'];
     }
 
     /**
@@ -127,9 +104,9 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Creates a new Module instance
      *
      * @param Container $app
-     * @param string $args
-     * @param string $path
-     * @return \Larabile\Modules\Module
+     * @param $name
+     * @param $path
+     * @return \Nwidart\Modules\Module
      */
     abstract protected function createModule(...$args);
 
@@ -145,7 +122,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
         $modules = [];
 
         foreach ($paths as $key => $path) {
-            $manifests = $this->getFiles()->glob("{$path}/module.json");
+            $manifests = $this->app['files']->glob("{$path}/module.json");
 
             is_array($manifests) || $manifests = [];
 
@@ -185,7 +162,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
         $modules = [];
 
         foreach ($cached as $name => $module) {
-            $path = $module['path'];
+            $path = $module["path"];
 
             $modules[$name] = $this->createModule($this->app, $name, $path);
         }
@@ -200,7 +177,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      */
     public function getCached()
     {
-        return $this->cache->remember($this->config('cache.key'), $this->config('cache.lifetime'), function () {
+        return $this->app['cache']->remember($this->config('cache.key'), $this->config('cache.lifetime'), function () {
             return $this->toCollection()->toArray();
         });
     }
@@ -226,7 +203,6 @@ abstract class FileRepository implements RepositoryInterface, Countable
     {
         $modules = [];
 
-        /** @var Module $module */
         foreach ($this->all() as $name => $module) {
             if ($module->isStatus($status)) {
                 $modules[$name] = $module;
@@ -255,7 +231,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      */
     public function allEnabled() : array
     {
-        return $this->getByStatus(true);
+        return $this->getByStatus(1);
     }
 
     /**
@@ -265,7 +241,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      */
     public function allDisabled() : array
     {
-        return $this->getByStatus(false);
+        return $this->getByStatus(0);
     }
 
     /**
@@ -447,11 +423,16 @@ abstract class FileRepository implements RepositoryInterface, Countable
     }
 
     /**
-     * @inheritDoc
+     * Get a specific config data from a configuration file.
+     *
+     * @param $key
+     *
+     * @param null $default
+     * @return mixed
      */
-    public function config(string $key, $default = null)
+    public function config($key, $default = null)
     {
-        return $this->config->get('modules.' . $key, $default);
+        return $this->app['config']->get('modules.' . $key, $default);
     }
 
     /**
@@ -462,13 +443,13 @@ abstract class FileRepository implements RepositoryInterface, Countable
     public function getUsedStoragePath() : string
     {
         $directory = storage_path('app/modules');
-        if ($this->getFiles()->exists($directory) === false) {
-            $this->getFiles()->makeDirectory($directory, 0777, true);
+        if ($this->app['files']->exists($directory) === false) {
+            $this->app['files']->makeDirectory($directory, 0777, true);
         }
 
         $path = storage_path('app/modules/modules.used');
-        if (!$this->getFiles()->exists($path)) {
-            $this->getFiles()->put($path, '');
+        if (!$this->app['files']->exists($path)) {
+            $this->app['files']->put($path, '');
         }
 
         return $path;
@@ -485,7 +466,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
     {
         $module = $this->findOrFail($name);
 
-        $this->getFiles()->put($this->getUsedStoragePath(), $module);
+        $this->app['files']->put($this->getUsedStoragePath(), $module);
     }
 
     /**
@@ -493,29 +474,29 @@ abstract class FileRepository implements RepositoryInterface, Countable
      */
     public function forgetUsed()
     {
-        if ($this->getFiles()->exists($this->getUsedStoragePath())) {
-            $this->getFiles()->delete($this->getUsedStoragePath());
+        if ($this->app['files']->exists($this->getUsedStoragePath())) {
+            $this->app['files']->delete($this->getUsedStoragePath());
         }
     }
 
     /**
      * Get module used for cli session.
      * @return string
-     * @throws \Larabile\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
      */
     public function getUsedNow() : string
     {
-        return $this->findOrFail($this->getFiles()->get($this->getUsedStoragePath()));
+        return $this->findOrFail($this->app['files']->get($this->getUsedStoragePath()));
     }
 
     /**
      * Get laravel filesystem instance.
      *
-     * @return Filesystem
+     * @return \Illuminate\Filesystem\Filesystem
      */
-    public function getFiles(): Filesystem
+    public function getFiles()
     {
-        return $this->files;
+        return $this->app['files'];
     }
 
     /**
@@ -543,7 +524,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
 
         $baseUrl = str_replace(public_path() . DIRECTORY_SEPARATOR, '', $this->getAssetsPath());
 
-        $url = $this->url->asset($baseUrl . "/{$name}/" . $url);
+        $url = $this->app['url']->asset($baseUrl . "/{$name}/" . $url);
 
         return str_replace(['http://', 'https://'], '//', $url);
     }
@@ -556,7 +537,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      */
     public function enabled($name) : bool
     {
-        return $this->findOrFail($name)->isEnabled();
+        return $this->findOrFail($name)->enabled();
     }
 
     /**
@@ -574,7 +555,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Enabling a specific module.
      * @param string $name
      * @return void
-     * @throws \Larabile\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
      */
     public function enable($name)
     {
@@ -585,7 +566,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Disabling a specific module.
      * @param string $name
      * @return void
-     * @throws \Larabile\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
      */
     public function disable($name)
     {
@@ -596,7 +577,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
      * Delete a specific module.
      * @param string $name
      * @return bool
-     * @throws \Larabile\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
      */
     public function delete($name) : bool
     {

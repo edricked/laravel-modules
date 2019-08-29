@@ -1,11 +1,11 @@
 <?php
 
-namespace Larabile\Modules\Publishing;
+namespace Nwidart\Modules\Publishing;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Contracts\PublisherInterface;
-use Larabile\Modules\Contracts\RepositoryInterface;
-use Larabile\Modules\Module;
+use Nwidart\Modules\Contracts\PublisherInterface;
+use Nwidart\Modules\Contracts\RepositoryInterface;
+use Nwidart\Modules\Module;
 
 abstract class Publisher implements PublisherInterface
 {
@@ -87,7 +87,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * Get module instance.
      *
-     * @return \Larabile\Modules\Module
+     * @return \Nwidart\Modules\Module
      */
     public function getModule()
     {

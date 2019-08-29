@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Routing;
+namespace Nwidart\Modules\Routing;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

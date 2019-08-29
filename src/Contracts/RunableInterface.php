@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Contracts;
+namespace Nwidart\Modules\Contracts;
 
 interface RunableInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Exceptions;
+namespace Nwidart\Modules\Exceptions;
 
 class ModuleNotFoundException extends \Exception
 {

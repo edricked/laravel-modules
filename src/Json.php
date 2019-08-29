@@ -1,9 +1,9 @@
 <?php
 
-namespace Larabile\Modules;
+namespace Nwidart\Modules;
 
 use Illuminate\Filesystem\Filesystem;
-use Larabile\Modules\Exceptions\InvalidJsonException;
+use Nwidart\Modules\Exceptions\InvalidJsonException;
 
 class Json
 {

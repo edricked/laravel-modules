@@ -1,8 +1,8 @@
 <?php
 
-namespace Larabile\Modules\Lumen;
+namespace Nwidart\Modules\Lumen;
 
-use Larabile\Modules\FileRepository;
+use Nwidart\Modules\FileRepository;
 
 class LumenFileRepository extends FileRepository
 {

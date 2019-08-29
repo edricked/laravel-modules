@@ -1,19 +1,19 @@
 <?php
 
-namespace Larabile\Modules\Laravel;
+namespace Nwidart\Modules\Laravel;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Foundation\ProviderRepository;
 use Illuminate\Support\Str;
-use Larabile\Modules\Module as BaseModule;
+use Nwidart\Modules\Module as BaseModule;
 
 class Module extends BaseModule
 {
     /**
      * {@inheritdoc}
      */
-    public function getCachedServicesPath(): string
+    public function getCachedServicesPath()
     {
         return Str::replaceLast('services.php', $this->getSnakeName() . '_module.php', $this->app->getCachedServicesPath());
     }
@@ -21,7 +21,7 @@ class Module extends BaseModule
     /**
      * {@inheritdoc}
      */
-    public function registerProviders(): void
+    public function registerProviders()
     {
         (new ProviderRepository($this->app, new Filesystem(), $this->getCachedServicesPath()))
             ->load($this->get('providers', []));
@@ -30,7 +30,7 @@ class Module extends BaseModule
     /**
      * {@inheritdoc}
      */
-    public function registerAliases(): void
+    public function registerAliases()
     {
         $loader = AliasLoader::getInstance();
         foreach ($this->get('aliases', []) as $aliasName => $aliasClass) {

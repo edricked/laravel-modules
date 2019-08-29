@@ -1,11 +1,11 @@
 <?php
 
-namespace Larabile\Modules;
+namespace Nwidart\Modules;
 
 use Illuminate\Support\ServiceProvider;
-use Larabile\Modules\Providers\BootstrapServiceProvider;
-use Larabile\Modules\Providers\ConsoleServiceProvider;
-use Larabile\Modules\Providers\ContractsServiceProvider;
+use Nwidart\Modules\Providers\BootstrapServiceProvider;
+use Nwidart\Modules\Providers\ConsoleServiceProvider;
+use Nwidart\Modules\Providers\ContractsServiceProvider;
 
 abstract class ModulesServiceProvider extends ServiceProvider
 {

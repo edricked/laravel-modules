@@ -1,7 +1,5 @@
 <?php
 
-use Larabile\Modules\Activators\FileActivator;
-
 return [
 
     /*
@@ -26,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/larabile/laravel-modules/src/Commands/stubs',
+        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
@@ -151,10 +149,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'larabile',
+        'vendor' => 'nwidart',
         'author' => [
-            'name' => 'Edrick Agoncillo',
-            'email' => 'agoncilloedrick@gmail.com',
+            'name' => 'Nicolas Widart',
+            'email' => 'n.widart@gmail.com',
         ],
     ],
     /*
@@ -188,24 +186,4 @@ return [
          */
         'files' => 'register',
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Activators
-    |--------------------------------------------------------------------------
-    |
-    | You can define new types of activators here, file, database etc. The only
-    | required parameter is 'class'.
-    | The file activator will store the activation status in storage/installed_modules
-    */
-    'activators' => [
-        'file' => [
-            'class' => FileActivator::class,
-            'statuses-file' => storage_path('modules_statuses.json'),
-            'cache-key' => 'activator.installed',
-            'cache-lifetime' => 604800,
-        ],
-    ],
-
-    'activator' => 'file',
 ];

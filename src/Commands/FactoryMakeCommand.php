@@ -1,11 +1,11 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Support\Str;
-use Larabile\Modules\Support\Config\GenerateConfigReader;
-use Larabile\Modules\Support\Stub;
-use Larabile\Modules\Traits\ModuleCommandTrait;
+use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Nwidart\Modules\Support\Stub;
+use Nwidart\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 
 class FactoryMakeCommand extends GeneratorCommand

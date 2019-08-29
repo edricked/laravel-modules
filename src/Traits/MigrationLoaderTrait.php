@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Traits;
+namespace Nwidart\Modules\Traits;
 
 trait MigrationLoaderTrait
 {

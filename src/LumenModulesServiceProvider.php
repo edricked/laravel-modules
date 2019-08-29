@@ -1,8 +1,8 @@
 <?php
 
-namespace Larabile\Modules;
+namespace Nwidart\Modules;
 
-use Larabile\Modules\Support\Stub;
+use Nwidart\Modules\Support\Stub;
 
 class LumenModulesServiceProvider extends ModulesServiceProvider
 {
@@ -46,12 +46,6 @@ class LumenModulesServiceProvider extends ModulesServiceProvider
             $path = $app['config']->get('modules.paths.modules');
 
             return new Lumen\LumenFileRepository($app, $path);
-        });
-        $this->app->singleton(Contracts\ActivatorInterface::class, function ($app) {
-            $activator = $app['config']->get('modules.activator');
-            $class = $app['config']->get('modules.activators.' . $activator)['class'];
-
-            return new $class($app);
         });
         $this->app->alias(Contracts\RepositoryInterface::class, 'modules');
     }

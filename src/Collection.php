@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules;
+namespace Nwidart\Modules;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection as BaseCollection;

@@ -1,14 +1,14 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Str;
-use Larabile\Modules\Contracts\RepositoryInterface;
-use Larabile\Modules\Module;
-use Larabile\Modules\Support\Config\GenerateConfigReader;
-use Larabile\Modules\Traits\ModuleCommandTrait;
+use Nwidart\Modules\Contracts\RepositoryInterface;
+use Nwidart\Modules\Module;
+use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Nwidart\Modules\Traits\ModuleCommandTrait;
 use RuntimeException;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
@@ -159,10 +159,10 @@ class SeedCommand extends Command
         $name = Str::studly($name);
 
         $namespace = $this->laravel['modules']->config('namespace');
-        $config = GenerateConfigReader::read('seeder');
-        $seederPath = str_replace('/', '\\', $config->getPath());
+        $seederPath = GenerateConfigReader::read('seeder');
+        $seederPath = str_replace('/', '\\', $seederPath->getPath());
 
-        return $namespace . '\\' . $name . '\\' . $config->getNamespace() . '\\' . $name . 'DatabaseSeeder';
+        return $namespace . '\\' . $name . '\\' . $seederPath . '\\' . $name . 'DatabaseSeeder';
     }
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Migrations\Migrator;
-use Larabile\Modules\Traits\MigrationLoaderTrait;
+use Nwidart\Modules\Migrations\Migrator;
+use Nwidart\Modules\Traits\MigrationLoaderTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -27,7 +27,7 @@ class MigrateRollbackCommand extends Command
     protected $description = 'Rollback the modules migrations.';
 
     /**
-     * @var \Larabile\Modules\Contracts\RepositoryInterface
+     * @var \Nwidart\Modules\Contracts\RepositoryInterface
      */
     protected $module;
 
@@ -64,7 +64,7 @@ class MigrateRollbackCommand extends Command
             $module = $this->module->findOrFail($module);
         }
 
-        $migrator = new Migrator($module, $this->getLaravel());
+        $migrator = new Migrator($module);
 
         $database = $this->option('database');
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Support\Config;
+namespace Nwidart\Modules\Support\Config;
 
 class GenerateConfigReader
 {

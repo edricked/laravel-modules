@@ -1,9 +1,9 @@
 <?php
 
-namespace Larabile\Modules\Process;
+namespace Nwidart\Modules\Process;
 
-use Larabile\Modules\Contracts\RepositoryInterface;
-use Larabile\Modules\Contracts\RunableInterface;
+use Nwidart\Modules\Contracts\RepositoryInterface;
+use Nwidart\Modules\Contracts\RunableInterface;
 
 class Runner implements RunableInterface
 {

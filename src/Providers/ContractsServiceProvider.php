@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Providers;
+namespace Nwidart\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Larabile\Modules\Contracts\RepositoryInterface;
-use Larabile\Modules\Laravel\LaravelFileRepository;
+use Nwidart\Modules\Contracts\RepositoryInterface;
+use Nwidart\Modules\Laravel\LaravelFileRepository;
 
 class ContractsServiceProvider extends ServiceProvider
 {

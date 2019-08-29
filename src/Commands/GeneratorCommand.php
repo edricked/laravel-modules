@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Exceptions\FileAlreadyExistException;
-use Larabile\Modules\Generators\FileGenerator;
+use Nwidart\Modules\Exceptions\FileAlreadyExistException;
+use Nwidart\Modules\Generators\FileGenerator;
 
 abstract class GeneratorCommand extends Command
 {
@@ -75,7 +75,7 @@ abstract class GeneratorCommand extends Command
     /**
      * Get class namespace.
      *
-     * @param \Larabile\Modules\Module $module
+     * @param \Nwidart\Modules\Module $module
      *
      * @return string
      */

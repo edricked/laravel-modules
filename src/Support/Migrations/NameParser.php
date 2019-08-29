@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Support\Migrations;
+namespace Nwidart\Modules\Support\Migrations;
 
 class NameParser
 {

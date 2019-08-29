@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Process;
+namespace Nwidart\Modules\Process;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use Larabile\Modules\Contracts\RepositoryInterface;
+use Nwidart\Modules\Contracts\RepositoryInterface;
 use Symfony\Component\Process\Process;
 
 class Installer
@@ -25,7 +25,7 @@ class Installer
 
     /**
      * The module repository instance.
-     * @var \Larabile\Modules\Contracts\RepositoryInterface
+     * @var \Nwidart\Modules\Contracts\RepositoryInterface
      */
     protected $repository;
 
@@ -90,7 +90,7 @@ class Installer
 
     /**
      * Set the module repository instance.
-     * @param \Larabile\Modules\Contracts\RepositoryInterface $repository
+     * @param \Nwidart\Modules\Contracts\RepositoryInterface $repository
      * @return $this
      */
     public function setRepository(RepositoryInterface $repository)

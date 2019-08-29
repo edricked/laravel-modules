@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Module;
-use Larabile\Modules\Publishing\AssetPublisher;
+use Nwidart\Modules\Module;
+use Nwidart\Modules\Publishing\AssetPublisher;
 use Symfony\Component\Console\Input\InputArgument;
 
 class PublishCommand extends Command

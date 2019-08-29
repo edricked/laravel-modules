@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Migrations\Migrator;
-use Larabile\Modules\Publishing\MigrationPublisher;
+use Nwidart\Modules\Migrations\Migrator;
+use Nwidart\Modules\Publishing\MigrationPublisher;
 use Symfony\Component\Console\Input\InputArgument;
 
 class PublishMigrationCommand extends Command
@@ -44,11 +44,11 @@ class PublishMigrationCommand extends Command
     /**
      * Publish migration for the specified module.
      *
-     * @param \Larabile\Modules\Module $module
+     * @param \Nwidart\Modules\Module $module
      */
     public function publish($module)
     {
-        with(new MigrationPublisher(new Migrator($module, $this->getLaravel())))
+        with(new MigrationPublisher(new Migrator($module)))
             ->setRepository($this->laravel['modules'])
             ->setConsole($this)
             ->publish();

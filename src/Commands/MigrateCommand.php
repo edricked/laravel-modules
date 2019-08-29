@@ -1,10 +1,10 @@
 <?php
 
-namespace Larabile\Modules\Commands;
+namespace Nwidart\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Larabile\Modules\Migrations\Migrator;
-use Larabile\Modules\Module;
+use Nwidart\Modules\Migrations\Migrator;
+use Nwidart\Modules\Module;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -25,7 +25,7 @@ class MigrateCommand extends Command
     protected $description = 'Migrate the migrations from the specified module or from all modules.';
 
     /**
-     * @var \Larabile\Modules\Contracts\RepositoryInterface
+     * @var \Nwidart\Modules\Contracts\RepositoryInterface
      */
     protected $module;
 
@@ -60,7 +60,7 @@ class MigrateCommand extends Command
      */
     protected function migrate(Module $module)
     {
-        $path = str_replace(base_path(), '', (new Migrator($module, $this->getLaravel()))->getPath());
+        $path = str_replace(base_path(), '', (new Migrator($module))->getPath());
 
         if ($this->option('subpath')) {
             $path = $path . "/" . $this->option("subpath");

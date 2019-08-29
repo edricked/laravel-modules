@@ -1,6 +1,6 @@
 <?php
 
-namespace Larabile\Modules\Support;
+namespace Nwidart\Modules\Support;
 
 class Stub
 {
